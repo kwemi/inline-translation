@@ -1,0 +1,27 @@
+nav{
+  li{
+    float: left;
+    margin-left: 6px;
+    
+    a{
+      text-decoration: none;
+      display: block;
+      color: $body_text_color;
+      color: rgba(4, 35, 40, 0.7);
+      padding: 6px 18px 5px;
+      text-transform: uppercase;
+      border-radius: 6px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+      
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+        color: $background_main;
+      }
+    }
+  }
+}

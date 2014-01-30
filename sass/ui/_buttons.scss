@@ -1,0 +1,39 @@
+.ui_btn{
+  text-decoration: none;
+  padding: 6px 1.2em 5px;
+  background-color: $background_main;
+  float: left;
+  color: $body_text_color;
+/*   text-transform: uppercase; */
+  text-shadow: 0px -2px 0px rgba(255, 255, 255 , 1);
+ -webkit-transition-property: background-color, border-color;
+-webkit-transition-duration:.25s, .25s;
+-webkit-transition-timing-function: linear, linear;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid darken($background_main, 4);
+  &:hover{
+    background-color: $link_hover;
+    color:white;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0 , 0.5);
+    border-color: darken($link_hover,4);
+  }
+}
+.primary_btn{
+	 background-color: $link_color;
+	 color: white;
+	 text-shadow: 0px -1px 0px rgba(0, 0, 0 , 0.5);
+	 border-color: darken($link_color, 4);
+}
+.submit .ui_btn{
+	float: right;
+	margin-left: 0.6em;
+	
+}
+.login_btn{
+  @extend .ui_btn;
+  
+}
